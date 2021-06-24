@@ -1,0 +1,27 @@
+<h1 class="mat-display-2 header-text">
+  {{ title }}: {{ companyCount }}
+</h1>
+
+<mat-card class="mat-card-layout">
+  <mat-list role="list">
+    <mat-list-item
+      role="listitem"
+      class="delete-item is-active"
+      *ngFor="let companyEntry of companyList">
+      <div class="circle"(click)="navigateUpdate(companyEntry)">{{ companyEntry.company | stringTransformer }}</div>
+      <div class="company-description">{{ companyEntry.company }}</div>
+      <button
+        (click)="deleteCompanyById(companyEntry)"
+        mat-icon-button
+        class="delete-button">
+        <mat-icon class="mat-24">delete</mat-icon>
+      </button>
+    </mat-list-item>
+  </mat-list>
+</mat-card>
+
+<div class="button-layout" layout-align="center center">
+  <button (click)="navigateAdd()" class="fab-icon" mat-fab>
+    <mat-icon>add</mat-icon>
+  </button>
+</div>

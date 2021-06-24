@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "cbos-company-db": {
+      "hosting": {
+        "cbos-assessment": [
+          "cbos-company-db"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<h1 class="mat-display-2 header-text">
+    {{ title }}
+  </h1>
+  
+  <mat-card class="mat-card-layout">
+    <mat-form-field appearance="outline">
+      <input
+        [(ngModel)]="companyDetails.company"
+        type="text"
+        matInput
+        placeholder="Name"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input
+        min="1"
+        [(ngModel)]="companyDetails.contactNumber"
+        type="number"
+        matInput
+        placeholder="Number"
+      />
+    </mat-form-field>
+  </mat-card>
+  
+  <div class="button-layout" layout-align="center center">
+    <button (click)="editUser()" class="fab-icon" mat-fab>
+      <mat-icon>done</mat-icon>
+    </button>
+  </div>

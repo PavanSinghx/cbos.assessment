@@ -1,0 +1,60 @@
+.mat-card-layout {
+  background-color: #56566e;
+  min-height: 250px;
+  padding: 0px !important;
+}
+
+.fab-icon {
+  background-color: #56566e;
+  color: #fff;
+  top: -27.5px;
+}
+
+.mat-icon {
+  vertical-align: middle;
+}
+
+.delete-item {
+  height: 75px !important;
+  display: inline-block;
+  color: #cccccc;
+}
+
+.delete-button {
+  margin-left: auto;
+}
+
+.mat-list-item:hover {
+  background-color: #5f5f77;
+}
+
+.circle {
+  width: 44px;
+  line-height: 44px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid #cccccc;
+  color: #cccccc;
+  cursor: pointer;
+}
+
+.button-layout {
+  text-align: center;
+  position: relative;
+}
+
+.header-text {
+  text-align: center;
+  color: white;
+  margin: 0 0 16px;
+}
+
+.company-description {
+  padding-left: 20px;
+}
+
+mat-list {
+  flex-grow: 1;
+  overflow: auto;
+}

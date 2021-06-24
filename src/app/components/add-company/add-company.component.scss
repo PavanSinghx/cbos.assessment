@@ -1,0 +1,26 @@
+.mat-card-layout {
+    background-color: #56566e;
+    min-height: 150px;
+    height: 180px;
+    padding: 10% !important;
+    display: grid;
+    grid-template-rows: 80px;
+  }
+  
+  .fab-icon {
+    background-color: #56566e;
+    color: #fff;
+    top: -27.5px;
+  }
+  
+  .button-layout {
+    text-align: center;
+    position: relative;
+  }
+  
+  .header-text {
+    text-align: center;
+    color: white;
+    margin: 0 0 16px;
+  }
+  
