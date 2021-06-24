@@ -5,13 +5,14 @@ import { EditCompanyComponent } from './components/edit-company/edit-company.com
 import { ViewCompanyComponent } from './components/view-company/view-company.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'view', pathMatch: 'full' },
   { path: 'view', component: ViewCompanyComponent },
   { path: 'add', component: AddCompanyComponent },
-  { path: 'edit', component: EditCompanyComponent }
+  { path: 'edit', component: EditCompanyComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
